@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package io.metrist.example_agent_usage;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -28,11 +28,12 @@ public class App {
                 .setHeader("User-Agent", "Java 11 HttpClient Bot")
                 .build();
 
-        var response = httpClient.send(request, BodyHandlers.ofString());
-        // client.sendAsync(request, BodyHandlers.ofString())
-        // .thenApply(HttpResponse::body)
-        // .thenAccept(System.out::println)
-        // .join();
-        System.out.println(response.body());
+        // var response = httpClient.send(request, BodyHandlers.ofString());
+        // System.out.println(response.body());
+
+        httpClient.sendAsync(request, BodyHandlers.ofString())
+                .thenApply(HttpResponse::body)
+                .thenAccept(System.out::println)
+                .join();
     }
 }

@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package io.metrist.example_agent_usage;
 
 import static org.junit.Assert.assertTrue;
 

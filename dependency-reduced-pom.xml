@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.metrist.io</groupId>
+  <groupId>io.metrist.agent</groupId>
   <artifactId>metrist-agent</artifactId>
   <name>metrist-agent</name>
   <version>1.0-SNAPSHOT</version>
@@ -38,10 +38,6 @@
           <version>2.8.2</version>
         </plugin>
         <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
-        </plugin>
-        <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
@@ -61,10 +57,9 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Premain-Class>com.metrist.io.TimingAgent</Premain-Class>
+                    <Premain-Class>io.metrist.agent.MetristAgent</Premain-Class>
                     <Can-Redefine-Classes>true</Can-Redefine-Classes>
                     <Can-Retransform-Classes>true</Can-Retransform-Classes>
-                    <Can-Set-Native-Method-Prefix>true</Can-Set-Native-Method-Prefix>
                   </manifestEntries>
                 </transformer>
               </transformers>
