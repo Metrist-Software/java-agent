@@ -21,4 +21,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: target/metrist-agent-*-*.jar
+          files: target/metrist-agent-*.jar

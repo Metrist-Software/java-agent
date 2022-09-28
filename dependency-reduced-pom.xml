@@ -4,7 +4,7 @@
   <groupId>io.metrist.agent</groupId>
   <artifactId>metrist-agent</artifactId>
   <name>${project.groupId}:${project.artifactId}</name>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1</version>
   <description>Metrist Java Agent</description>
   <url>https://github.com/Metrist-Software/java-agent</url>
   <developers>
