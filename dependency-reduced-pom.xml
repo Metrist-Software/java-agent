@@ -3,7 +3,28 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.metrist.agent</groupId>
   <artifactId>metrist-agent</artifactId>
+  <name>${project.groupId}:${project.artifactId}</name>
   <version>1.0-SNAPSHOT</version>
+  <description>Metrist Java Agent</description>
+  <url>https://github.com/Metrist-Software/java-agent</url>
+  <developers>
+    <developer>
+      <id>metrist</id>
+      <name>Metrist</name>
+      <url>https://github.com/Metrist-Software/java-agent</url>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git@github.com:Metrist-Software/java-agent.git</connection>
+    <developerConnection>scm:git:git@github.com:Metrist-Software/java-agent.git</developerConnection>
+    <url>https://github.com/Metrist-Software/java-agent</url>
+  </scm>
   <build>
     <pluginManagement>
       <plugins>
