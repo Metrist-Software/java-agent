@@ -19,7 +19,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.util.Collections;
-import java.util.logging.Logger;
+import java.util.concurrent.TimeUnit;
 
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.agent.builder.AgentBuilder.Listener;
@@ -98,7 +98,7 @@ class SendAdvice {
         .append("\t")
         .append(url.getPath())
         .append("\t")
-        .append(System.nanoTime() - startTime)
+        .append(TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - startTime))
         .toString();
     Transport.getInstance().send(message);
   }
