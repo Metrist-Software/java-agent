@@ -16,6 +16,6 @@ tar -zcvf $fullname.tar.gz java-agent-*.jar
 gpg --sign --armor --detach-sign $fullname.tar.gz
 echo $fullname > latest.txt
 
-aws s3 cp $fullname.tar.gz $bucket --dryrun
-aws s3 cp $fullname.tar.gz.asc $bucket --dryrun
-aws s3 cp latest.txt $bucket --dryrun
+aws s3 cp $fullname.tar.gz $bucket
+aws s3 cp $fullname.tar.gz.asc $bucket
+aws s3 cp latest.txt $bucket
