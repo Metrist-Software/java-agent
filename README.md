@@ -3,7 +3,7 @@
 Metrist agent for Java. It intercepts HTTP calls and sends data to the local Metrist Orchestrator. To run the agent simply download the latest `jar` file of the latest [release](https://github.com/Metrist-Software/java-agent/releases) then attach the agent by running
 
 ```bash
-java -javaagent:metrist-agent-<version>.jar \
+java -javaagent:java-agent-<version>.jar \
   -jar your_app.jar
 ```
 
@@ -26,6 +26,6 @@ To run the example app with the agent, run the following
 # Replace <version> with the project version. Seem pom.xml
 (cd example && mvn clean package) &&\
     mvn clean package &&                       
-    java -javaagent:target/metrist-agent-<version>.jar \
+    java -javaagent:target/java-agent-<version>.jar \
         -jar example/target/example_agent_usage-<version>.jar
 ```
