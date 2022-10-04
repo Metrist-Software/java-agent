@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.metrist.agent</groupId>
-  <artifactId>java-agent</artifactId>
+  <artifactId>metrist-java-agent</artifactId>
   <name>${project.groupId}:${project.artifactId}</name>
   <version>0.0.1</version>
   <description>Metrist Java Agent</description>
-  <url>https://github.com/Metrist-Software/java-agent</url>
+  <url>https://github.com/Metrist-Software/metrist-java-agent</url>
   <developers>
     <developer>
       <id>metrist</id>
       <name>Metrist</name>
-      <url>https://github.com/Metrist-Software/java-agent</url>
+      <url>https://github.com/Metrist-Software/metrist-java-agent</url>
     </developer>
   </developers>
   <licenses>
@@ -21,9 +21,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git@github.com:Metrist-Software/java-agent.git</connection>
-    <developerConnection>scm:git:git@github.com:Metrist-Software/java-agent.git</developerConnection>
-    <url>https://github.com/Metrist-Software/java-agent</url>
+    <connection>scm:git:git@github.com:Metrist-Software/metrist-java-agent.git</connection>
+    <developerConnection>scm:git:git@github.com:Metrist-Software/metrist-java-agent.git</developerConnection>
+    <url>https://github.com/Metrist-Software/metrist-java-agent</url>
   </scm>
   <build>
     <pluginManagement>

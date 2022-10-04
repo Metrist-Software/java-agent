@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.metrist.agent</groupId>
-  <artifactId>java-agent</artifactId>
+  <artifactId>metrist-java-agent</artifactId>
   <version>0.0.1</version>
 
   <properties>
@@ -14,7 +14,7 @@
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Metrist Java Agent</description>
-  <url>https://github.com/Metrist-Software/java-agent</url>
+  <url>https://github.com/Metrist-Software/metrist-java-agent</url>
 
   <licenses>
     <license>
@@ -27,14 +27,14 @@
     <developer>
       <id>metrist</id>
       <name>Metrist</name>
-      <url>https://github.com/Metrist-Software/java-agent</url>
+      <url>https://github.com/Metrist-Software/metrist-java-agent</url>
     </developer>
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:Metrist-Software/java-agent.git</connection>
-    <developerConnection>scm:git:git@github.com:Metrist-Software/java-agent.git</developerConnection>
-    <url>https://github.com/Metrist-Software/java-agent</url>
+    <connection>scm:git:git@github.com:Metrist-Software/metrist-java-agent.git</connection>
+    <developerConnection>scm:git:git@github.com:Metrist-Software/metrist-java-agent.git</developerConnection>
+    <url>https://github.com/Metrist-Software/metrist-java-agent</url>
   </scm>
 
   <dependencies>

@@ -1,10 +1,10 @@
-# java-agent
+# metrist-java-agent
 -----------
 Metrist agent for Java. It intercepts HTTP calls and sends data to the local Metrist Orchestrator.
 
 #### Bash shell download and verification instructions
 
-The following steps will download and verify the debian package
+The following steps will download and verify the tar archive
 
     sudo apt install wget gnupg
     cd /tmp
@@ -18,7 +18,7 @@ The following steps will download and verify the debian package
 
 To run the agent
 
-    java -javaagent:java-agent-<version>.jar \
+    java -javaagent:metrist-java-agent-<version>.jar \
       -jar your_app.jar
 
 The agent uses the following environment variables
@@ -40,6 +40,6 @@ To run the example app with the agent, run the following
 # Replace <version> with the project version. Seem pom.xml
 (cd example && mvn clean package) &&\
     mvn clean package &&                       
-    java -javaagent:target/java-agent-<version>.jar \
+    java -javaagent:target/metrist-java-agent-<version>.jar \
         -jar example/target/example_agent_usage-<version>.jar
 ```
